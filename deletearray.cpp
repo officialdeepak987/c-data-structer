@@ -1,30 +1,57 @@
-#include<bits/stdc++.h>
+// #include<bits/stdc++.h>
 
-using namespace std;
+// using namespace std;
 
-int main()
-{ int a[10],size,pos;
-cout<<"enter size of array :";
-cin>>size;
-cout<<"enter element of array:";
- for(int i =0;i<size;i++)
- {
-     cin>>a[i];
-}
-for(int i=0;i<size;i++){
-    cout<<a[i]<<" ";
-}
-cout<<"enter the positon of array where the element want to delete:";
-cin>>pos;
-for(int i=pos-1;i<size;i++){
-    a[i]=a[i+1];
-}
-size--;
-cout<<"after delete on element :"<<endl;
-for(int i=0;i<size;i++){
-    cout<<a[i]<<" ";
-}
+// int main()
+// { int a[10],size,pos;
+// cout<<"enter size of array :";
+// cin>>size;
+// cout<<"enter element of array:";
+//  for(int i =0;i<size;i++)
+//  {
+//      cin>>a[i];
+// }
+// for(int i=0;i<size;i++){
+//     cout<<a[i]<<" ";
+// }
+// cout<<"enter the positon of array where the element want to delete:";
+// cin>>pos;
+// for(int i=pos-1;i<size;i++){
+//     a[i]=a[i+1];
+// }
+// size--;
+// cout<<"after delete on element :"<<endl;
+// for(int i=0;i<size;i++){
+//     cout<<a[i]<<" ";
+// }
    
 
-    return 0;
+//     return 0;
+// }
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a[10],pos,size,i;
+    cout<<"size of array :";
+    cin>>size;
+    cout<<"enter array of element :";
+    for(int i=0;i<size;i++){
+        cin>>a[i];
+        
+    }
+    for(int i=0;i<size;i++){
+        cout<<a[i]<<" ";
+    }
+    cout<<"\n";
+    pos=0;
+    for(i=pos;i<size;i++){
+
+    a[i]=a[i+1];
+    }
+    size--;
+    for(int i=0;i<size;i++){
+        cout<<a[i]<<" ";
+    }
+    
 }
